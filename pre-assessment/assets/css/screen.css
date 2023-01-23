@@ -21,8 +21,14 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
-	background-image: url("assets/img/assessment-3.jpg");
 }
+.header-image {
+	background-image: url(“assets/img/assessment-3.jpg”);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	}
 #header h1 a {
 }
 #nav {
