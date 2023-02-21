@@ -68,7 +68,7 @@ aside {
     width: 80vw;
     margin: 20px auto;
     border:1px solid #000;
-    background-image: url("../img/grid.png");
+    /*background-image: url("../img/grid.png");*/
   }
 header.primary, footer.primary {
   
@@ -95,25 +95,28 @@ aside {
     margin-left:2.083%;
     padding:2.173%;
 }
+
 /*
-@media screen and (min-width:800px){
-  main{
-    width:960px;
-  }
-}
-
+MAX WIDTH
 @media screen and (max-width:600px){
-  main{
-    width:800px;
-  }
+.row{
+  grid-template-column:1fr;
+    }
 }
-
-@media screen and (max-width:400px){
-  main{
-    width:520px;
-  }
+RANGED
+@media screen and (max-width:600px) and (min-width:601){
+.row{
+  grid-template-column:repeat(2,1fr);
+    }
+}
+MIN WIDTH
+@media screen and (min-width:801px){
+.row{
+  grid-template-column:repeat(4,1fr);
+    }
 }
 */
+
 
  
   
