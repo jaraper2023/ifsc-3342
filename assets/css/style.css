@@ -102,7 +102,7 @@ aside {
 
 @media screen and (max-width:800px){
 .row{
-grid-template-column:1fr;
+grid-template-columns:1fr;
 background-color: #ECE9E1;
   }
 }
@@ -115,11 +115,15 @@ grid-template-column:repeat(2,1fr);
 
 @media screen and (min-width:601px){
 .row{
-grid-template-column:repeat(4,1fr);
+grid-template-columns:repeat(4,1fr);
 background-color: #3d3d3d;
   }
 }
 
-
+.row{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
 
 
