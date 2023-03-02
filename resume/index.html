@@ -27,20 +27,32 @@
 <body>
 
   <header>
-    <!-- Main navigation -->
+    <!-- Main navigation 
+    <nav class="primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>-->
+  </header>
+  <!-- Main -->
+  <main itemscope itemtype="http://schema.org/Person" class="cf">
+    <h1>James Aaron Raper</h1>
+    <section id="about">
+      <h2 class="visuallyhidden">Personal details</h2>
+      <img itemprop="image" src="img/400x400.jpg" alt="James A. Raper">
+       <!-- Main navigation -->
     <nav class="primary">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
     </nav>
-  </header>
-  <!-- Main -->
-  <main itemscope itemtype="http://schema.org/Person">
-    <h1>James Aaron Raper</h1>
-    <section id="about">
-      <h2>Personal details</h2>
-      <img itemprop="image" src="img/400x400.jpg" alt="James A. Raper">
+    <ul class="related-links">
+      <li><a itemprop="url" rel="me" href="https://jaraper2023.github.io/ifsc-3342/">github</a></li>
+      <li><a itemprop="url" rel="me" href="https://www.linkedin.com/in/aaron-raper/">linkedin</a></li>
+      <li><a itemprop="url" href="resources/James Raper Resume.pdf" download>pdf resume</a></li>
+    </ul>
       <p itemprop="description">Statement of Intent</p>
       <dl>
         <dt>Name</dt>
@@ -71,11 +83,11 @@
         </dd>
 
       </dl>
-      <ul class="related-links">
+      <!--<ul class="related-links">
         <li><a itemprop="url" rel="me" href="https://jaraper2023.github.io/ifsc-3342/">github</a></li>
         <li><a itemprop="url" rel="me" href="https://www.linkedin.com/in/aaron-raper/">linkedin</a></li>
         <li><a itemprop="url" href="resources/James Raper Resume.pdf" download>pdf resume</a></li>
-      </ul>
+      </ul>-->
     </section>
     <section id="skills">
       <h2>Skills</h2>
