@@ -1,0 +1,129 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* Start of "Micro clearfix" */
+
+.cf {
+  zoom: 1;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+/* End of "Micro clearfix" */
+
+
+/*static grid*/
+
+/* main {
+  
+  width: 960px;
+  margin: 20px auto;
+  border:1px solid #000;
+  background-color:rgba(0, 0, 0, 0.4) ;
+  background-image: url("../img/grid.png");
+}
+header.primary, footer.primary {
+
+  width: 916px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  float:left;
+}
+#blog {
+
+  width: 604px;
+  background-color: rgba(0, 0, 0, 0.4);
+  float:left;
+  margin-left:20px;
+  padding: 20px;
+}
+
+aside {
+
+  width: 292px;
+  float:left;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-left:20px;
+  padding:20px;
+}
+*/
+
+/*responsive changes - target/context=result*/
+main {
+  
+  width: 80vw;
+  margin: 20px auto;
+  background-color: #ECE9E1;
+
+ /* border:1px solid #000;*/
+  /*background-image: url("../img/grid.png");*/
+}
+header.primary, footer.primary {
+
+  width: 95.41%;
+  margin: 2.083%;
+  background-color: #ECE9E1;;
+  float:left;
+  padding:2.173%;
+}
+#blog {
+
+  width: 62.91%;
+  background-color: #ECE9E1;;
+  float:left;
+  margin-left:2.083%;
+  padding:2.173%;
+}
+
+aside {
+
+  width: 30.41%;
+  float:left;
+  background-color: #ECE9E1;;
+  margin-left:2.083%;
+  padding:2.173%;
+}
+
+
+
+@media screen and (max-width:800px){
+.row{
+grid-template-columns:1fr;
+background-color: #ECE9E1;
+  }
+}
+/*RANGED
+@media screen and (max-width:600px) and (min-width:601){
+.row{
+grid-template-column:repeat(2,1fr);
+  }
+}*/
+
+@media screen and (min-width:601px){
+.row{
+grid-template-columns:repeat(4,1fr);
+background-color: #3d3d3d;
+  }
+}
+
+.row{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+
