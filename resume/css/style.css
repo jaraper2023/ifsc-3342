@@ -100,7 +100,7 @@ textarea {
   
   /* ------ Utility Classes  -------*/
   .container{
-    margin:0 auto;
+    margin:1fr auto;
     background:#ECE9E1;
     width:480px;
   }
@@ -298,28 +298,30 @@ textarea {
   main.container{
   max-width:768px;
   grid-template-columns:repeat(1fr);
-  grid-template-rows: 100px 100px; 
+  grid-template-rows: 1fr; 
   grid-template-areas: 
   "title"
-  "about" "nav"
-  ;
+  "about" "nav";
+  
 }
 
-.related-links li{
-  grid-template-columns:repeat(3,1fr); 
-  justify-content: right;
-  align-items: right; 
+.related-links{
+  
+  justify-content:center;
+  margin-left: 20px;
+  list-style:none;
+  padding: 2px;
 }
-
-header.container{
-  max-width:900px;
-}
+  header.container{
+    max-width:768px;
+  }
 
 /*Nested Grid*/
 #about{
 display:grid;
 grid-gap:2em;
-grid-template-columns: 250px 1fr 1fr ;
+grid-template-columns:250px;
+grid-template-rows: 250px 25;
 grid-template-areas:
   "bio details details"
   "related related related";
@@ -335,7 +337,7 @@ grid-area:related;
 border-bottom:1px solid #999;
 padding-bottom:50px
 }
-}
+
 
 
 
